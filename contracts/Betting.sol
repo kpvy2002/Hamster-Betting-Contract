@@ -376,7 +376,7 @@ contract Betting {
 
         require(msg.value >= minBet, "Minimum betting wager is 0.005 ETH.");
 
-        require(msg.value <= maxBet, "Maximum betting wager is 10 ETH.");
+        require(msg.value <= maxBet, "Maximum betting wager is 100 ETH.");
 
         Staker memory staker = Staker({
             user: msg.sender,
